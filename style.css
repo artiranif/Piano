@@ -1,0 +1,62 @@
+body {
+    background: rgba(78, 75, 75, 0.986);
+  }
+  
+  h1{
+    color: cyan;
+    text-align: center;
+  }
+  label{
+    color: cyan;
+    font-size: 30px;
+  }
+  h3{
+    margin-top: 350px;
+    text-align: center;
+    font-size: large;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+.white {
+    position: relative;
+    background: rgb(241, 240, 240);
+    width: 10%;
+    height: 400px;
+    margin: 0 2px;
+  }
+  .cible{
+    background: rgb(111, 226, 224);
+  }
+.touched {
+  background: rgb(188, 185, 185);
+}
+
+.dieze{
+  position: relative;
+  background: rgb(17, 11, 11);
+  color: rgb(241, 240, 240);
+  height: 200px;
+  width: 10%;
+  z-index: 1;
+}
+.dieze h3{
+  margin-top: 175px;
+  text-align: center;
+  font-size: large;
+}
+.white.black:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  /*background: rgb(17, 11, 11);
+  */
+  right: -25%;
+  width: 50%;
+  height: 50%;
+  z-index: 1;
+}
+

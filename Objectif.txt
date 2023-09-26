@@ -1,0 +1,4 @@
+- dire les limites des touches
+- faire jouer l'ordinateur des notes
+- afficher les notes a jouer
+avoir des notes 
