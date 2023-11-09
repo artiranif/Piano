@@ -1,0 +1,81 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set a background color for the entire page */
+  body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the header */
+  h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  /* Style the label for selecting a partition */
+  label {
+    display: block;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Style the partition selection dropdown */
+  select#partition {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+  }
+  
+  /* Style the musical keys container */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  /* Style the musical key divs */
+  .key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 150px;
+    margin: 5px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Style the musical key divs when hovered */
+  .key:hover {
+    background-color: #ddd;
+  }
+  
+  /* Style the sharp/flat keys */
+  .dieze {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Style the audio playback container */
+  #audio {
+    display: none; /* Hide the audio elements */
+  }
