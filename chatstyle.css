@@ -63,6 +63,11 @@
     background-color: #fff;
     transition: background-color 0.3s ease;
   }
+
+  .touched {
+    background-color: #000;
+    transition: background-color 0.3s ease;
+  }
   
   /* Style the musical key divs when hovered */
   .key:hover {
