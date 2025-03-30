@@ -67,14 +67,14 @@ let indextouche = 0;
 for (const index in touche) {
     iterator = touche[index];
     dicotouche[iterator]=listenote[index];
-    conteneur.innerHTML += `<div id="${iterator}" onmouseup=souris("${iterator}") class="key white black untouched" ><h3>${versionlettre(listenote[index])}</h3></div>`
+    conteneur.innerHTML += `<div id="${iterator}" onmouseup=souris("${iterator}") class="key white black untouched" ><h2>${versionlettre(listenote[index])}</h2></div>`
     
     let notesup = listesuperieur[indextouche];
     if(listenote[index]+1 == notesup){
         let subiterator =uppertouche[index]; 
         dicotouche[subiterator]=notesup;
         console.log(listenote[index], notesup)
-        conteneur.innerHTML += `<div id="${subiterator}" onmouseup=souris("${subiterator}") class="dieze untouched" ><h3>${versionlettre(notesup)}</h3></div>`
+        conteneur.innerHTML += `<div id="${subiterator}" onmouseup=souris("${subiterator}") class="dieze untouched" ><h2 class="notedieze">${versionlettre(notesup)}</h2></div>`
         rep.innerHTML += `<audio id="song-${subiterator}" src=${trouverfichier(listesuperieur[indextouche])}></audio>`;
         indextouche++
     }
